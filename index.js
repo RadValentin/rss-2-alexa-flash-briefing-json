@@ -15,9 +15,9 @@ app.get('/', (appReq, appRes) => {
       rssJSON.rss.channel[0].item.forEach(item => {
         alexaNewsItems.push({
           uid: item.guid[0]._,
-          updateDate: item.pubDate,
-          titleText: item.title,
-          mainText: item.description,
+          updateDate: item.pubDate[0],
+          titleText: item.title[0],
+          mainText: item.description[0],
           redirectionURL: item.link[0]
         });
       });
