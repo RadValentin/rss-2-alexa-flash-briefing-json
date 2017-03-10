@@ -3,8 +3,9 @@ const xml2js = require('xml2js');
 const express = require('express');
 const app = express();
 
-const PORT = 3000;
 const RSS_URL = 'http://www.animenewsnetwork.com/all/rss.xml';
+
+app.set('port', (process.env.PORT || 3000));
 
 app.get('/', (appReq, appRes) => {
   rp(RSS_URL)
@@ -32,5 +33,6 @@ app.get('/', (appReq, appRes) => {
     });
 });
 
-console.log(`Listening on port ${PORT}`);
-app.listen(PORT);
+app.listen(app.get('port'), function() {
+  console.log('RSS proxy running on port', app.get('port'));
+});
