@@ -1,0 +1,29 @@
+{
+  "name": "rss-2-alexa-flash-briefing-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "6.9.4"
+  },
+  "scripts": {
+    "start": "start http://localhost:3000 && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadValentin/rss-2-alexa-flash-briefing-json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RadValentin/rss-2-alexa-flash-briefing-json/issues"
+  },
+  "homepage": "https://github.com/RadValentin/rss-2-alexa-flash-briefing-json#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "openurl": "^1.1.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.1.1",
+    "xml2js": "^0.4.17"
+  }
+}
