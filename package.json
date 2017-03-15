@@ -1,7 +1,7 @@
 {
   "name": "rss-2-alexa-flash-briefing-json",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple way to turn an RSS feed into an Alexa Flash Briefing Skill.",
   "main": "index.js",
   "engines": {
     "node": "6.9.4"
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/RadValentin/rss-2-alexa-flash-briefing-json.git"
   },
-  "author": "",
+  "author": "Valentin Radulescu (http://valentin.io/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RadValentin/rss-2-alexa-flash-briefing-json/issues"
