@@ -1,4 +1,4 @@
-# RSS to Alexa Flash Briefing JSON ![heroku](https://heroku-badge.herokuapp.com/?app=ann-alexa-flash-briefing&style=flat&svg=1)
+# RSS to Alexa Flash Briefing JSON
 
 ## What is this?
 
