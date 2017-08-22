@@ -1,5 +1,7 @@
 # RSS to Alexa Flash Briefing JSON
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/RadValentin/rss-2-alexa-flash-briefing-json.svg)](https://greenkeeper.io/)
+
 ## What is this?
 
 This is my first foray into the Alexa ecosystem; a simple converter that takes a RSS feed and formats it to [Alexa friendly JSON](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/flash-briefing-skill-api-feed-reference#feed-format-details).
