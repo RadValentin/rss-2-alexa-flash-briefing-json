@@ -4,7 +4,7 @@
   "description": "Simple way to turn an RSS feed into an Alexa Flash Briefing Skill.",
   "main": "index.js",
   "engines": {
-    "node": "6.9.4"
+    "node": "11"
   },
   "scripts": {
     "dev": "start http://localhost:3000 && node index.js",
