@@ -4,7 +4,7 @@ const express = require('express');
 const dateFormat = require('dateformat');
 const app = express();
 
-const RSS_URL = 'http://www.animenewsnetwork.com/all/rss.xml';
+const RSS_URL = 'https://www.animenewsnetwork.com/news/rss.xml';
 const RSS_POLL_TIMEOUT = 15 * 60 * 1000
 let dataCache = {};
 
