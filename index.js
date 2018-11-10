@@ -18,6 +18,13 @@ app.listen(app.get('port'), function() {
   console.log('RSS proxy running on port', app.get('port'));
 });
 
+function mergeTitleAndDescription(title, description) {
+  if (title.substr(-1) === '.') 
+    return `${title} ${description}.`;
+
+  return `${title}. ${description}.`
+}
+
 function updateDataCache() {
   rp(RSS_URL)
     .then(rssRes =>
@@ -31,7 +38,7 @@ function updateDataCache() {
             uid: item.guid[0]._,
             updateDate: dateFormat(itemDate, `UTC:yyyy-mm-dd'T'HH:MM:ss'.0Z'`),
             titleText: item.title[0],
-            mainText: item.description[0],
+            mainText: mergeTitleAndDescription(item.title[0], item.description[0]),
             redirectionURL: item.link[0]
           });
         });
