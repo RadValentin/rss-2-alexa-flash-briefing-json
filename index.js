@@ -19,10 +19,11 @@ app.listen(app.get('port'), function() {
 });
 
 function mergeTitleAndDescription(title, description) {
-  if (title.substr(-1) === '.') 
-    return `${title} ${description}.`;
-
-  return `${title}. ${description}.`
+  if (!description || description.lenght === 0) {
+    return `${title}.`;
+  } else {
+    return `${title}. ${description}.`;
+  }
 }
 
 function updateDataCache() {
