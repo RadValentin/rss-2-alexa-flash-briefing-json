@@ -15,7 +15,7 @@ app.get('/', (appReq, appRes) => {
 });
 
 app.listen(app.get('port'), function() {
-  console.log('RSS proxy running on port', app.get('port'));
+  console.log('RSS proxy running on port: ', app.get('port'));
 });
 
 function mergeTitleAndDescription(title, description) {
