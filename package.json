@@ -22,7 +22,7 @@
   "homepage": "https://github.com/RadValentin/rss-2-alexa-flash-briefing-json#readme",
   "dependencies": {
     "dateformat": "^2.0.0",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "openurl": "^1.1.1",
     "request": "^2.81.0",
     "request-promise": "^4.1.1",
